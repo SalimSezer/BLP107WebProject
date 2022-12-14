@@ -14,11 +14,12 @@ body {
   text-align: center;
   background: white;
 }
-
-.header h1 {
-  font-size: 50px;
+.canada-logo {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 0px auto;
 }
-
 /* Style the top navigation bar */
 .topnav-a {
   overflow: hidden;
