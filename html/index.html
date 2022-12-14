@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr-TR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kanada Tanıtım Sayfası" />
+    <meta name="keywords" content="Kanada,Canada,HTML, CSS, JavaScript" />
+    <meta
+      name="author"
+      content=" Salim Sezer Kurnaz, Talha Eken, Ceren Yeşil,
+    Çağın Yıldırım, Hilal, Arif Serhat Bekdemir, Akın Tiryaki, Oğuz, Burak Talha
+    Tarı,"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
     <link
       rel="shortcut icon"
       href="../image/flags/favicon.ico"
@@ -14,36 +26,46 @@
     <title>Kanada</title>
   </head>
   <body>
+    <div id="basla"></div>
+    <a href="#basla"><i class="fa-solid fa-chevron-up"></i></a>
     <div class="header">
       <div>
-        <img
-          class="canada-logo"
-          src="../image/flags/android-chrome-192x192.png"
-          alt="Kanada Bayrağı"
-        />
+        <a href="../html/index.html"
+          ><img
+            class="canada-logo"
+            src="../image/flags/android-chrome-192x140.png"
+            alt="Kanada Bayrağı"
+        /></a>
       </div>
     </div>
 
     <div class="topnav-a">
-      <a href="#">Proje Ekibi</a>
-      <a href="#">İletişim</a>
-      <a href="#">Anasayfa</a>
-      <a href="#">Galeri</a>
-      <a href="#">Blog Haberleri</a>
-    </div>
-    <div class="topnav-b">
-      <a href="#">Proje Ekibi</a>
-      <a href="#">İletişim</a>
-      <a href="#">Anasayfa</a>
-      <a href="#">Galeri</a>
-      <a href="#">Blog Haberleri</a>
+      <a href="../html/projeEkibi-page.html" id="mrgn">Proje Ekibi</a>
+      <a href="../html/iletisim-page.html">İletişim</a>
+      <a href="../html/index.html">Anasayfa</a>
+      <a href="../html/galeri-page.html">Galeri</a>
+      <a href="../html/blog-page.html">Blog Haberleri</a>
     </div>
 
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
+          <!-- kanada saati -->
+          <div class="canda-time">
+            <h2 style="text-align: center">Kanada Saati</h2>
+            <p id="hourse"></p>
+            <p id="minute"></p>
+          </div>
+        </div>
+        <!-- slider -->
+        <div class="card">
+          <h2>Slider</h2>
+        </div>
+        <!-- /slider -->
+
+        <div class="card">
+          <h2>Örnek Tanıtım 1</h2>
+          <h5>Title description, Sep 2, 2017</h5>
           <div class="fakeimg" style="height: 200px">Image</div>
           <p>Some text..</p>
           <p>
@@ -53,8 +75,9 @@
             exercitation ullamco.
           </p>
         </div>
+
         <div class="card">
-          <h2>TITLE HEADING</h2>
+          <h2>Örnek Tanıtım 2</h2>
           <h5>Title description, Sep 2, 2017</h5>
           <div class="fakeimg" style="height: 200px">Image</div>
           <p>Some text..</p>
@@ -66,27 +89,32 @@
           </p>
         </div>
       </div>
+      <!-- yan sütun -->
       <div class="rightcolumn">
         <div class="card">
-          <h2>About Me</h2>
+          <h2>Örenk Blog 1</h2>
           <div class="fakeimg" style="height: 100px">Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        </div>
-        <div class="card">
-          <h3>Popular Post</h3>
           <div class="fakeimg"><p>Image</p></div>
           <div class="fakeimg"><p>Image</p></div>
           <div class="fakeimg"><p>Image</p></div>
         </div>
         <div class="card">
-          <h3>Follow Me</h3>
-          <p>Some text..</p>
+          <h3>Video Köşesi</h3>
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/5kmDpObtNPo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
+      <!-- /yan sütun -->
     </div>
 
     <div class="footer">
-      <h2>Footer</h2>
+      <h4>&copy; 2022-2023 Hakları Saklı Değildir</h4>
     </div>
   </body>
 </html>
