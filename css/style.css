@@ -60,6 +60,7 @@ i:hover {
 /* Style the topnav links */
 
 .topnav-a a {
+  width: 20%;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -83,6 +84,7 @@ i:hover {
 /* Style the topnav links */
 
 .topnav-b a {
+  width: 20%;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -117,7 +119,16 @@ i:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-
+#search-button:hover {
+  background-color: #9b0000;
+  transition: 0.5s;
+}
+/* kanda-time */
+#saat {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
@@ -166,7 +177,9 @@ i:hover {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
+.footer label {
+  font-weight: bold;
+}
 /* Footer */
 .footer {
   padding: 20px;
