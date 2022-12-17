@@ -60,6 +60,10 @@ i:hover {
 }
 
 /* Style the topnav links */
+#checked-nav {
+  background-color: #780000;
+  color: white;
+}
 
 .topnav-a a {
   width: 20%;
