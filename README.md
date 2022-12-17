@@ -9,7 +9,7 @@
 - [Salim Sezer Kurnaz](https://www.linkedin.com/in/salimsezer/ "Salim Sezer Kurnaz")
 - Talha Eken
 - Ceren Yeşil
-- Çağın Yıldırım------
+- Çağın Yıldırım
 - Hilal 
 - Arif Serhat Bekdemir
 - [Akın Tiryaki](https://www.linkedin.com/in/ak%C4%B1n-tiryaki-47129b256/ "Akın Tiryaki")
