@@ -1,31 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr-TR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js"></script>
-    <title>Document</title>
+    <meta name="description" content="Kanada Tanıtım Sayfası" />
+    <meta name="keywords" content="Kanada,Canada,HTML, CSS, JavaScript" />
+    <meta
+      name="author"
+      content=" Salim Sezer Kurnaz, Talha Eken, Ceren Yeşil,
+    Çağın Yıldırım, Hilal, Arif Serhat Bekdemir, Akın Tiryaki, Oğuz, Burak Talha
+    Tarı,"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../image/flags/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Blog - Haberler</title>
   </head>
   <body>
+    <div id="basla"></div>
+    <a href="#basla"><i class="fa-solid fa-chevron-up"></i></a>
+
     <div class="header">
-      <h1>Kanada</h1>
-      <p>Resize the browser window to see the effect.</p>
+      <div>
+        <a href="../html/index.html"
+          ><img
+            class="canada-logo"
+            src="../image/flags/android-chrome-192x140.png"
+            alt="Kanada Bayrağı"
+        /></a>
+      </div>
     </div>
 
-    <div class="topnav">
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
+    <div class="topnav-a">
+      <a href="../html/projeEkibi-page.html">Proje Ekibi</a>
+      <a href="../html/iletisim-page.html">İletişim</a>
+      <a href="../html/index.html">Anasayfa</a>
+      <a href="../html/galeri-page.html">Galeri</a>
+      <a href="../html/blog-page.html" id="checked-nav">Blog Haberleri</a>
+    </div>
+    <br />
+    <div class="topnav-b">
+      <a href="../html/ts1.html">TS-1</a>
+      <a href="../html/ts2.html">TS-2</a>
+      <a href="../html/ts3.html">TS-3</a>
+      <a href="../html/ts4.html">TS-4</a>
+      <a href="../html/ts5.html">TS-5</a>
     </div>
 
     <div class="row">
       <div class="leftcolumn">
+        <!-- search button -->
         <div class="card">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
+          <form action="https://tr.wikipedia.org/" target="_blank">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Arama Yapın"
+            />
+            <input type="submit" value="Ara" id="search-button" />
+          </form>
+        </div>
+        <div class="card">
+          <h2 style="text-align: center">Blog - Haber 1</h2>
+          <h5>Title description, Sep 2, 2017</h5>
           <div class="fakeimg" style="height: 200px">Image</div>
           <p>Some text..</p>
           <p>
@@ -35,8 +82,9 @@
             exercitation ullamco.
           </p>
         </div>
+
         <div class="card">
-          <h2>TITLE HEADING</h2>
+          <h2 style="text-align: center">Blog - Haber 2</h2>
           <h5>Title description, Sep 2, 2017</h5>
           <div class="fakeimg" style="height: 200px">Image</div>
           <p>Some text..</p>
@@ -48,27 +96,40 @@
           </p>
         </div>
       </div>
+      <!-- yan sütun -->
       <div class="rightcolumn">
         <div class="card">
-          <h2>About Me</h2>
-          <div class="fakeimg" style="height: 100px">Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        </div>
-        <div class="card">
-          <h3>Popular Post</h3>
-          <div class="fakeimg"><p>Image</p></div>
-          <div class="fakeimg"><p>Image</p></div>
-          <div class="fakeimg"><p>Image</p></div>
-        </div>
-        <div class="card">
-          <h3>Follow Me</h3>
-          <p>Some text..</p>
+          <h3>Video Köşesi</h3>
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/5kmDpObtNPo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
+      <!-- /yan sütun -->
     </div>
 
     <div class="footer">
-      <h2>Footer</h2>
+      <div class="card">
+        <h2>Mesajınızı İletin</h2>
+        <form action="#">
+          <label for="fname">İsim</label><br />
+          <input type="text" name="fname" id="fname" /><br />
+          <label for="sname">Soyisim</label><br />
+          <input type="text" name="sname" id="sname" /> <br />
+          <label for="email">Mail</label> <br />
+          <input type="email" name="email" id="email" /><br />
+          <label for="message">Mesaj</label><br />
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <br />
+          <input type="submit" value="Gönder" id="message-submit" />
+        </form>
+      </div>
+      <h4>&copy; 2022-2023 Hakları Saklı Değildir</h4>
     </div>
   </body>
 </html>
