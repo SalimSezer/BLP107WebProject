@@ -17,5 +17,3 @@
 - Burak Talha Tarı
 
 ------------
-
-sajdlkasjldkajsdklasd
