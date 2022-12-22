@@ -35,7 +35,7 @@ i:hover {
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
+  padding: 5%;
   text-align: center;
   background: #edf2f4;
   border-radius: 5px 5px 0px 0px;
@@ -154,9 +154,11 @@ i:hover {
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  height: 50%;
   width: 100%;
-  padding: 20px;
+  object-fit: cover;
+  padding: 20px 20px 20px 0px;
+  margin-bottom: 20px;
 }
 
 /* Add a card effect for articles */
@@ -251,4 +253,25 @@ i:hover {
   #message {
     width: 100%;
   }
+
 }
+body::-webkit-scrollbar {
+
+  background: #8d99ae;
+  width: 10px;
+  height: 10px;
+
+  }
+  body::-webkit-scrollbar-corner {
+  background: red;
+  } 
+  body::-webkit-scrollbar-thumb {
+  background: rgb(202, 22, 22);
+  border-radius: 6px;
+  }
+
+  .blogimage {
+  
+    width: 50%;
+   margin: 0px auto auto 0px;
+  }
