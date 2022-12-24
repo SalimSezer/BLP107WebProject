@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial;
   padding: 10px;
@@ -253,25 +252,21 @@ i:hover {
   #message {
     width: 100%;
   }
-
 }
 body::-webkit-scrollbar {
-
   background: #8d99ae;
   width: 10px;
   height: 10px;
-
-  }
-  body::-webkit-scrollbar-corner {
+}
+body::-webkit-scrollbar-corner {
   background: red;
-  } 
-  body::-webkit-scrollbar-thumb {
+}
+body::-webkit-scrollbar-thumb {
   background: rgb(202, 22, 22);
   border-radius: 6px;
-  }
+}
 
-  .blogimage {
-  
-    width: 50%;
-   margin: 0px auto auto 0px;
-  }
+.blogimage {
+  width: 50%;
+  margin: 0px auto auto 0px;
+}
