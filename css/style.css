@@ -161,9 +161,9 @@ i:hover {
   padding: 20px 20px 20px 0px;
   margin-bottom: 20px;
 } */
-#blogİmage {
+/* #blogİmage {
   width: 30%;
-}
+} */
 
 /* Add a card effect for articles */
 .card {
@@ -274,4 +274,19 @@ body::-webkit-scrollbar-corner {
 body::-webkit-scrollbar-thumb {
   background: rgb(202, 22, 22);
   border-radius: 6px;
+}
+
+.uyeler {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.uye {
+  border: 1px solid #8d99ae;
+  padding: 10px;
+  border-radius: 5px;
+  width: 25%;
+  background: rgb(202, 22, 22);
+  color: white;
 }
