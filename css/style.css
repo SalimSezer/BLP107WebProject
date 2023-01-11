@@ -159,6 +159,11 @@ i:hover {
   padding: 20px 20px 20px 0px;
   margin-bottom: 20px;
 }
+.Haber-logo{
+  margin-left: 165px;
+  width: 600px;
+  height: 400px;
+}
 
 /* Add a card effect for articles */
 .card {
@@ -166,8 +171,9 @@ i:hover {
   padding: 20px;
   margin-top: 20px;
   border-radius: 5px 5px 5px 5px;
+  
 }
-
+  
 /* Clear floats after the columns */
 .row:after {
   content: "";
