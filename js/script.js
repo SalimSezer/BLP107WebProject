@@ -21,3 +21,16 @@ function checkTime(i) {
   return i;
 }
 // saat
+
+function kontrol() {
+  var isim = document.forms["form"]["fname"].value;
+  var soyİsim = document.forms["form"]["sname"].value;
+  var email = document.forms["form"]["email"].value;
+
+  if (isim != "" && soyİsim != "" && email != "") {
+    alert("Mesajınız Başarıyla Gönderildi");
+  } else {
+    alert("Lütfen İsim Soyisim ve Mail Kısımlarını Doldurunuz");
+    return false;
+  }
+}
