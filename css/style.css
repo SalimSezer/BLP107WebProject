@@ -41,10 +41,10 @@ i:hover {
 }
 .canada-logo {
   margin: 0px auto;
-  opacity: 0.7;
+  opacity: 1;
 }
 .canada-logo:hover {
-  opacity: 1;
+  opacity: 0.8;
   transition: 0.6s;
 }
 .header a {
@@ -98,8 +98,143 @@ i:hover {
   padding: 14px 16px;
   margin: 0px auto;
   text-decoration: none;
-  border-radius: 5px;
 }
+/*SLIDER BAŞLANGIC*/
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #40d3dc;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #40d3dc;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #40d3dc;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #40d3dc;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #40d3dc;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background: #40d3dc;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+  background: #40d3dc;
+}
+/*SLIDER BİTİŞ*/
+/*DÖVİZ KURLARI BAŞLANGIC*/
+/*made by akın tiryaki*/
+
+.header-secondary {
+  background-color: #063f8c;
+}
+.header-secondary .header-container .market-data {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.header-secondary .header-container .market-data .market-data-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.header-secondary .header-container .market-data .market-data-item .name {
+  color: #b1d1fc;
+  font-size: 1rem;
+}
+.header-secondary .header-container .market-data .market-data-item .value {
+  font-size: 1.4rem;
+}
+
+/*DÖVİZ KURLARI BİTİŞ*/
 
 /* Change color on hover */
 .topnav-b a:hover {
@@ -142,6 +277,9 @@ i:hover {
   float: left;
   width: 75%;
 }
+#leftcolumn100 {
+  width: 100%;
+}
 
 /* Right column */
 .rightcolumn {
@@ -152,12 +290,15 @@ i:hover {
 }
 
 /* Fake image */
-.fakeimg {
+/* .fakeimg {
   height: 50%;
   width: 100%;
   object-fit: cover;
   padding: 20px 20px 20px 0px;
   margin-bottom: 20px;
+} */
+#blogİmage {
+  width: 30%;
 }
 
 /* Add a card effect for articles */
@@ -212,7 +353,9 @@ i:hover {
   margin-top: 20px;
   border-radius: 5px 5px 5px 5px;
 }
-
+iframe {
+  width: 100%;
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn,
@@ -223,6 +366,9 @@ i:hover {
   iframe {
     width: 100%;
     height: 500px;
+  }
+  #blogİmage {
+    width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -266,8 +412,17 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
-.blogimage {
-  width: 50%;
-  margin: 0px auto auto 0px;
+.uyeler {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
-
+.uye {
+  border: 1px solid #8d99ae;
+  padding: 10px;
+  border-radius: 5px;
+  width: 25%;
+  background: rgb(202, 22, 22);
+  color: white;
+}

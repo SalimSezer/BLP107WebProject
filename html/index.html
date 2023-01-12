@@ -51,9 +51,9 @@
     <div class="topnav-b">
       <a href="../html/ts1.html">Kanada Tarihi</a>
       <a href="../html/ts2.html">Kanada Finansal ve Demografi</a>
-      <a href="../html/ts3.html">TS-3</a>
+      <a href="../html/ts3.html">Kanada Marşları</a>
       <a href="../html/ts4.html">TS-4</a>
-      <a href="../html/ts5.html">TS-5</a>
+      <a href="../html/ts5.html">Kanada İnsan Hakları</a>
     </div>
 
     <div class="row">
@@ -71,59 +71,97 @@
           </form>
         </div>
 
-        <!-- slider -->
-        <div class="card">
-          <h2 style="text-align: center">Slider</h2>
-        </div>
-        <!-- /slider -->
         <div class="card">
           <!-- kanada saati -->
           <div class="canda-time">
-            <h2 style="text-align: center">Kanada Saati</h2>
-            <h2 style="text-align: center">(TR saati şu an)</h2>
+            <h2 style="text-align: center">Saat</h2>
             <p id="saat"></p>
           </div>
         </div>
-
+        <!-- slider -->
         <div class="card">
-          <h2>Örnek Tanıtım 1</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg" style="height: 200px">Image</div>
-          <p>Some text..</p>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
-        </div>
+          <h2 style="text-align: center">KANADA'DAN BAZI FOTOĞRAFLAR</h2>
+          <script src="../js/foto.js"></script>
+          <script src="../js/script.js"></script>
 
-        <div class="card">
-          <h2>Örnek Tanıtım 2</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg" style="height: 200px">Image</div>
-          <p>Some text..</p>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="f1" id="radio1" />
+              <input type="radio" name="f1" id="radio2" />
+              <input type="radio" name="f1" id="radio3" />
+              <input type="radio" name="f1" id="radio4" />
+              <input type="radio" name="f1" id="radio5" />
+              <input type="radio" name="f1" id="radio6" />
+
+              <div class="slide first">
+                <img src="../image/imagess/k1.jpg" alt="" />
+              </div>
+
+              <div class="slide">
+                <img src="../image/imagess/k2.jpg" alt="" />
+              </div>
+
+              <div class="slide">
+                <img src="../image/imagess/k3.jpg" alt="" />
+              </div>
+
+              <div class="slide">
+                <img src="../image/imagess/k4.jpg" alt="" />
+              </div>
+
+              <div class="slide">
+                <img src="../image/imagess/k5.jpg" alt="" />
+              </div>
+
+              <div class="slide">
+                <img src="../image/imagess/k6.jpg" alt="" />
+              </div>
+
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+              </div>
+              <div class="navigation-manual">
+                <label for=" radio1" class="manual-btn"></label>
+                <label for=" radio2" class="manual-btn"></label>
+                <label for=" radio3" class="manual-btn"></label>
+                <label for=" radio4" class="manual-btn"></label>
+                <label for=" radio5" class="manual-btn"></label>
+                <label for=" radio6" class="manual-btn"></label>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- /slider -->
       </div>
       <!-- yan sütun -->
       <div class="rightcolumn">
         <div class="card">
-          <h2>Örenk Blog 1</h2>
-          <div class="fakeimg" style="height: 100px">Image</div>
-          <div class="fakeimg"><p>Image</p></div>
-          <div class="fakeimg"><p>Image</p></div>
-          <div class="fakeimg"><p>Image</p></div>
+          <h2>DÖVİZ KURLARI</h2>
+          <div class="header-secondary">
+            <div class="header-container">
+              <div class="market-data">
+                <div class="market-data-item"></div>
+                <div class="market-data-item">
+                  <span class="name">USD</span>
+                  <span class="value usd"></span>
+                </div>
+
+                <div class="market-data-item">
+                  <span class="name">EURO</span>
+                  <span class="value eur"></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="card">
           <h3>Video Köşesi</h3>
           <iframe
-            width="100%"
             src="https://www.youtube.com/embed/5kmDpObtNPo"
             title="YouTube video player"
             frameborder="0"
@@ -138,7 +176,7 @@
     <div class="footer">
       <div class="card">
         <h2>Mesajınızı İletin</h2>
-        <form action="#">
+        <form action="#" name="form" method="post">
           <label for="fname">İsim</label><br />
           <input type="text" name="fname" id="fname" /><br />
           <label for="sname">Soyisim</label><br />
@@ -148,7 +186,12 @@
           <label for="message">Mesaj</label><br />
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
           <br />
-          <input type="submit" value="Gönder" id="message-submit" />
+          <input
+            type="button"
+            value="Gönder"
+            id="message-submit"
+            onclick="kontrol();"
+          />
         </form>
       </div>
       <h4>&copy; 2022-2023 Hakları Saklı Değildir</h4>
