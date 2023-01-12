@@ -110,7 +110,7 @@
     <div class="footer">
       <div class="card">
         <h2>Mesajınızı İletin</h2>
-        <form action="#">
+        <form action="#" name="form" method="post">
           <label for="fname">İsim</label><br />
           <input type="text" name="fname" id="fname" /><br />
           <label for="sname">Soyisim</label><br />
@@ -120,7 +120,12 @@
           <label for="message">Mesaj</label><br />
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
           <br />
-          <input type="submit" value="Gönder" id="message-submit" />
+          <input
+            type="button"
+            value="Gönder"
+            id="message-submit"
+            onclick="kontrol();"
+          />
         </form>
       </div>
       <h4>&copy; 2022-2023 Hakları Saklı Değildir</h4>
